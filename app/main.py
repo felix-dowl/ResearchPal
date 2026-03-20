@@ -1,27 +1,28 @@
-from ingester import DocumentIngester
-from retriever import ChromaRetriever
+from conversation_handler import ConversationHandler
 
 
-ingester = DocumentIngester()
-result = ingester.ingest("https://en.wikipedia.org/wiki/Led_Zeppelin")
-retriever = ChromaRetriever()
-query = "Led Zeppelin was formed in London in 1968."
-retrieved_chunks = retriever.retrieve(query, k=1)
-retrieved_chunks_mmr = retriever.retrieve_mmr(query, k=1)
+handler = ConversationHandler()
+handler.ingest("https://en.wikipedia.org/wiki/Led_Zeppelin")
+handler.ingest("https://en.wikipedia.org/wiki/Led_Zeppelin_discography")
+handler.ingest("https://www.britannica.com/topic/Led-Zeppelin")
 
-print(f"Ingested source: {result.source}")
-print(f"Source type: {result.source_type}")
-print(f"Stored chunks: {result.stored_count}\n")
+questions = [
+    "Who were the members of Led Zeppelin?",
+    "Which member was the drummer?",
+    "When did the band break up?",
+]
 
-if retrieved_chunks:
-    top_chunk = retrieved_chunks[0]
-    print(f"Query: {query}\n")
-    print("Top similarity chunk:")
-    print(top_chunk.page_content)
-    print(f"\nMetadata: {top_chunk.metadata}")
+for question in questions:
+    response = handler.ask(question, method="mmr", k=4)
+    print(f"Question: {question}")
+    print("Answer:")
+    print(response.answer)
+    print("\nCitations:")
+    for citation in response.citations:
+        print(citation)
+    print("\n" + "=" * 60 + "\n")
 
-if retrieved_chunks_mmr:
-    top_mmr_chunk = retrieved_chunks_mmr[0]
-    print("\nTop MMR chunk:")
-    print(top_mmr_chunk.page_content)
-    print(f"\nMetadata: {top_mmr_chunk.metadata}")
+print("Stored conversation history:")
+for turn in handler.get_history():
+    print(f"Q: {turn.question}")
+    print(f"A: {turn.answer}\n")

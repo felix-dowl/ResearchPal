@@ -1,0 +1,484 @@
+PS C:\dev\ResearchPal> & C:/Users/Felix/AppData/Local/Python/pythoncore-3.14-64/python.exe c:/dev/ResearchPal/src/test_scripts/retrieval_method_compare.py
+C:\Users\Felix\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\langchain_core\_api\deprecation.py:25: UserWarning: Core Pydantic V1 functionality isn't compatible with Python 
+3.14 or greater.
+  from pydantic.v1.fields import FieldInfo as FieldInfoV1
+Using existing ChromaDB collection with 5762 stored chunks.
+Parameters: k=4, fetch_k=10, lambda_mult=0.5. Use the similarity scores and the source diversity in MMR to discuss tradeoffs in the report.
+
+Query 1: Who were the members of Led Zeppelin?
+--------------------------------------------------------------------------------
+Similarity results:
+  Rank 1 | score=0.7553005814552307
+  Source: https://www.britannica.com/topic/Led-Zeppelin | title: Led Zeppelin | British Rock Band, Hard Rock, Blues Rock, Robert Plant, & Facts | Britannica | document_type: url        
+  Text: Led Zeppelin , British rock band that was extremely popular in the 1970s. Although their musical style was diverse , they came to be well known especially for their influence on the development of heavy metal . The members were Jimmy Page on guitar ,
+
+  Rank 2 | score=0.7940242290496826
+  Source: https://www.britannica.com/topic/Led-Zeppelin | title: Led Zeppelin | British Rock Band, Hard Rock, Blues Rock, Robert Plant, & Facts | Britannica | document_type: url        
+  Text: Led Zeppelin Formed in 1968 by guitarist Jimmy Page, Led Zeppelin gained fame for their striking integration of elements from different music genres and their live performances, which featured raw improvisation, with songs often differing from their
+
+  Rank 3 | score=0.8295559883117676
+  Source: https://en.wikipedia.org/wiki/Led_Zeppelin | title: Led Zeppelin - Wikipedia | document_type: url
+  Text: From Wikipedia, the free encyclopedia
+
+English rock band (1968–1980)
+
+This article is about the band. For their debut album, see Led Zeppelin (album) . For other uses, see Led Zeppelin (disambiguation) .
+
+Led Zeppelin
+
+Led Zeppelin in 1971 From left
+
+  Rank 4 | score=0.831527829170227
+  Source: https://en.wikipedia.org/wiki/Led_Zeppelin | title: Led Zeppelin - Wikipedia | document_type: url
+  Text: Band members
+
+Robert Plant – vocals, harmonica (1968–1980, 1985, 1988, 1995, 2007)
+
+Jimmy Page – guitars (1968–1980, 1985, 1988, 1995, 2007)
+
+John Paul Jones – bass, keyboards (1968–1980, 1985, 1988, 1995, 2007)
+
+John Bonham – drums, percussion (1968
+
+MMR results: (unique sources in top-4: 3)
+  Rank 1
+  Source: https://www.britannica.com/topic/Led-Zeppelin | title: Led Zeppelin | British Rock Band, Hard Rock, Blues Rock, Robert Plant, & Facts | Britannica | document_type: url        
+  Text: Led Zeppelin , British rock band that was extremely popular in the 1970s. Although their musical style was diverse , they came to be well known especially for their influence on the development of heavy metal . The members were Jimmy Page on guitar ,
+
+  Rank 2
+  Source: https://en.wikipedia.org/wiki/Led_Zeppelin | title: Led Zeppelin - Wikipedia | document_type: url
+  Text: Band members
+
+Robert Plant – vocals, harmonica (1968–1980, 1985, 1988, 1995, 2007)
+
+Jimmy Page – guitars (1968–1980, 1985, 1988, 1995, 2007)
+
+John Paul Jones – bass, keyboards (1968–1980, 1985, 1988, 1995, 2007)
+
+John Bonham – drums, percussion (1968
+
+  Rank 3
+  Source: https://achievement.org/achiever/jimmy-page/ | title: Jimmy Page | Academy of Achievement | document_type: url
+  Text: December 1968: Led Zeppelin guitarist Jimmy Page in London. After the break-up of The Yardbirds in the summer of 1968, Jimmy Page assembled a new band, The New Yardbirds, with bassist/keyboardist John Paul Jones, singer Robert Plant, and drummer John
+
+  Rank 4
+  Source: https://en.wikipedia.org/wiki/Led_Zeppelin | title: Led Zeppelin - Wikipedia | document_type: url
+  Text: Data from Wikidata
+
+Official website
+
+Led Zeppelin Archived 8 May 2024 at the Wayback Machine at Atlantic Records
+
+Led Zeppelin on the Internet Archive
+
+Led Zeppelin 's channel on YouTube
+
+v
+
+t
+
+e
+
+Led Zeppelin
+
+John Bonham
+
+John Paul Jones
+
+Jimmy Pa
+
+================================================================================
+
+Query 2: What are some of the most influential rock bands of all time?
+--------------------------------------------------------------------------------
+Similarity results:
+  Rank 1 | score=0.9774593114852905
+  Source: https://en.wikipedia.org/wiki/Pink_Floyd | title: Pink Floyd - Wikipedia | document_type: url
+  Text: ^ "Piper ranked no. 347" . Rolling Stone . Archived from the original on 2 September 2011 . Retrieved 27 November 2021 .
+
+^ "Rolling Stone: 500 Greatest Songs of All Time 2004 301–400" . Rolling Stone . Archived from the original on 21 June 2008 . Re
+
+  Rank 2 | score=1.0027357339859009
+  Source: https://en.wikipedia.org/wiki/The_Who | title: The Who - Wikipedia | document_type: url
+  Text: Legacy
+
+[ edit ]
+
+"The one thing that disgusts me about The Who is the way they smashed through every door in the uncharted hallway of rock 'n' roll without leaving much more than some debris for the rest of us to lay claim to."
+
+— Eddie Vedder [ 382
+
+  Rank 3 | score=1.00739586353302
+  Source: https://www.britannica.com/topic/the-Rolling-Stones | title: The Rolling Stones | Songs, Albums, Members, & Facts | Britannica | document_type: url
+  Text: In the process, the Stones have become rock’s definitive , emblematic band: a seamless blend of sound, look, and public image. It may be debatable whether they have actually, at any given moment, been the “greatest rock-and-roll band in the world,” a
+
+  Rank 4 | score=1.0239388942718506
+  Source: https://www.britannica.com/topic/the-Rolling-Stones | title: The Rolling Stones | Songs, Albums, Members, & Facts | Britannica | document_type: url
+  Text: the Rolling Stones
+
+Introduction & Top Questions
+
+Formation and early music
+
+First original hits: “(I Can’t Get No) Satisfaction” and “Get Off of My Cloud”
+
+Sticky Fingers and Exile on Main St.
+
+Lineup changes, disbanding, and reunion
+
+Documentaries,
+
+MMR results: (unique sources in top-4: 4)
+  Rank 1
+  Source: https://en.wikipedia.org/wiki/Pink_Floyd | title: Pink Floyd - Wikipedia | document_type: url
+  Text: ^ "Piper ranked no. 347" . Rolling Stone . Archived from the original on 2 September 2011 . Retrieved 27 November 2021 .
+
+^ "Rolling Stone: 500 Greatest Songs of All Time 2004 301–400" . Rolling Stone . Archived from the original on 21 June 2008 . Re
+
+  Rank 2
+  Source: https://en.wikipedia.org/wiki/John_Lennon | title: John Lennon - Wikipedia | document_type: url
+  Text: The Beatles George Harrison , John Lennon , Paul McCartney , Ringo Starr
+
+The Drifters Ben E. King , Rudy Lewis , Clyde McPhatter , Johnny Moore , Bill Pinkney , Charlie Thomas , Gerhart Thrasher
+
+Bob Dylan
+
+The Supremes Florence Ballard , Diana Ross
+
+  Rank 3
+  Source: https://en.wikipedia.org/wiki/The_Beatles_discography | title: The Beatles - Wikipedia | document_type: url
+  Text: Portals : 1960s
+
+England
+
+Music
+
+Pop music
+
+Rock music
+
+United Kingdom
+
+Retrieved from " https://en.wikipedia.org/w/index.php?title=The_Beatles&oldid=1346068465#Discography "
+
+Categories : The Beatles
+
+1960 establishments in England
+
+1970 disestablis
+
+  Rank 4
+  Source: https://www.britannica.com/topic/Led-Zeppelin | title: Led Zeppelin | British Rock Band, Hard Rock, Blues Rock, Robert Plant, & Facts | Britannica | document_type: url        
+  Text: Legacy
+
+Thanks in part to their manager, Peter Grant, the band enjoyed phenomenal commercial success throughout the 1970s. While Led Zeppelin never received the kind of critical acclaim or mainstream acceptance accorded the Beatles or the Rolling Sto
+
+================================================================================
+
+Query 3: Which bands in the corpus are associated with heavy metal?
+--------------------------------------------------------------------------------
+Similarity results:
+  Rank 1 | score=0.8811531662940979
+  Source: https://en.wikipedia.org/wiki/Deep_Purple | title: Deep Purple - Wikipedia | document_type: url
+  Text: , [ 194 ] Dio , [ 195 ] Dokken , [ 196 ] Dream Theater , [ 197 ] [ 198 ] Europe , [ 199 ] Exciter , [ 200 ] Exodus , [ 201 ] Fates Warning , [ 202 ] Lita Ford , [ 203 ] Heart , 
+[ 204 ] Helloween , [ 189 ] Iron Maiden , [ 205 ] Judas Priest , [ 206 ]
+
+  Rank 2 | score=0.9619858860969543
+  Source: https://en.wikipedia.org/wiki/Deep_Purple | title: Deep Purple - Wikipedia | document_type: url
+  Text: [ 216 ] Night Ranger , [ 217 ] Opeth , [ 218 ] Overkill , [ 219 ] Pantera , [ 220 ] Prong , [ 221 ] Queen , [ 222 ] Queensrÿche , [ 223 ] Rage Against the Machine , [ 224 ] [ 225 ] Rush , [ 226 ] Saxon , [ 189 ] Scorpions , [ 189 ] Sepultura , [ 227
+
+  Rank 3 | score=1.0063297748565674
+  Source: https://en.wikipedia.org/wiki/Metallica | title: Metallica - Wikipedia | document_type: url
+  Text: Metallica Cliff Burton , Kirk Hammett , James Hetfield , Jason Newsted , Robert Trujillo , Lars Ulrich
+
+Run-DMC Jam Master Jay , Darryl McDaniels , Joseph Simmons
+
+Bobby Womack
+
+Early influences Wanda Jackson
+
+Sidemen Bill Black
+
+D. J. Fontana
+
+Spoon
+
+  Rank 4 | score=1.0072758197784424
+  Source: https://en.wikipedia.org/wiki/Metallica_discography | title: Metallica discography - Wikipedia | document_type: url
+  Text: ...And Justice for All : "Top Albums/CDs" . RPM . October 15, 1988. Archived from the original on December 8, 2015 . Retrieved August 4, 2013 .
+
+Metallica : "Top Albums/CDs" . RPM . September 28, 1991. Archived from the original on May 18, 2015 . Ret
+
+MMR results: (unique sources in top-4: 3)
+  Rank 1
+  Source: https://en.wikipedia.org/wiki/Deep_Purple | title: Deep Purple - Wikipedia | document_type: url
+  Text: , [ 194 ] Dio , [ 195 ] Dokken , [ 196 ] Dream Theater , [ 197 ] [ 198 ] Europe , [ 199 ] Exciter , [ 200 ] Exodus , [ 201 ] Fates Warning , [ 202 ] Lita Ford , [ 203 ] Heart , 
+[ 204 ] Helloween , [ 189 ] Iron Maiden , [ 205 ] Judas Priest , [ 206 ]
+
+  Rank 2
+  Source: https://en.wikipedia.org/wiki/Black_Sabbath | title: Black Sabbath - Wikipedia | document_type: url
+  Text: ^ Elflein, Dietmar (2017). "Iron and Steel: Forging Heavy Metal's Song Structures or the Impact of Black Sabbath and Judas Priest on Metal's Musical Language" . In Brown, Andy R.; Kahn-Harris, Keith; Scott, Niall; Spracklen, Karl (eds.). Global Metal
+
+  Rank 3
+  Source: https://en.wikipedia.org/wiki/Deep_Purple | title: Deep Purple - Wikipedia | document_type: url
+  Text: Fireball (1971)
+
+Machine Head (1972)
+
+Who Do We Think We Are (1973)
+
+Burn (1974)
+
+Stormbringer (1974)
+
+Come Taste the Band (1975)
+
+Perfect Strangers (1984)
+
+The House of Blue Light (1987)
+
+Slaves and Masters (1990)
+
+The Battle Rages On... (1993)
+
+Pur
+
+  Rank 4
+  Source: https://en.wikipedia.org/wiki/Metallica_discography | title: Metallica discography - Wikipedia | document_type: url
+  Text: ^ a b c d e f g h i j k "Discographie von Metallica" (in German). GfK Entertainment. Archived from the original on February 15, 2023 . Retrieved August 27, 2021 .
+
+^ a b c d e f g "Discography Metallica" . norwegiancharts.com . Hung Medien . Retrieve
+
+================================================================================
+
+Query 4: Which artist in the corpus is best known as the lead singer of Queen?
+--------------------------------------------------------------------------------
+Similarity results:
+  Rank 1 | score=0.8181512951850891
+  Source: https://www.britannica.com/topic/Queen-British-rock-group | title: Queen | We Will Rock You, Movie, Freddie Mercury, Songs, Band Members, Albums, & Facts | Britannica | document_type: url
+  Text: Britannica AI
+
+Ask Anything
+
+Table of Contents
+
+Table of Contents
+
+Ask Anything
+
+Top Questions
+
+Who were the original members of the rock band Queen?
+
+The original members of the British rock band Queen were lead singer Freddie Mercury , guitarist Br
+
+  Rank 2 | score=0.8783461451530457
+  Source: https://en.wikipedia.org/wiki/Queen_discography | title: Queen discography - Wikipedia | document_type: url
+  Text: ^ a b c d e f "Discographie Queen" (enter "Queen" into the "Suchen" box) . GfK Entertainment . Retrieved 9 November 2018 .
+
+^ a b c "a-クイーン - Yamachan Land (Archives of the Japanese record charts) - Albums Chart Daijiten - Queen" (in Japanese). 30 De
+
+  Rank 3 | score=0.891181468963623
+  Source: https://en.wikipedia.org/wiki/Queen_(band) | title: Queen (band) - Wikipedia | document_type: url
+  Text: ^ "People Watch" . Fort Worth Star-Telegram . 26 August 2004. Archived from the original on 1 July 2017 . Retrieved 18 April 2009 .
+
+^ "Queen album brings rock to Iran" . BBC . Retrieved 31 March 2020 .
+
+^ Way, Gerard (29 April 2011). 100 Greatest Ar
+
+  Rank 4 | score=0.8960737586021423
+  Source: https://en.wikipedia.org/wiki/Freddie_Mercury | title: Freddie Mercury - Wikipedia | document_type: url
+  Text: Polydor
+
+EMI
+
+Parlophone
+
+Hollywood
+
+Formerly of Queen
+
+Ibex
+
+Sour Milk Sea
+
+Musical artist
+
+Signature Freddie Mercury (born Farrokh Bulsara ; 5 September 1946 – 24 November 1991) was a British singer and songwriter who achieved global fame as the le
+
+MMR results: (unique sources in top-4: 3)
+  Rank 1
+  Source: https://www.britannica.com/topic/Queen-British-rock-group | title: Queen | We Will Rock You, Movie, Freddie Mercury, Songs, Band Members, Albums, & Facts | Britannica | document_type: url
+  Text: Britannica AI
+
+Ask Anything
+
+Table of Contents
+
+Table of Contents
+
+Ask Anything
+
+Top Questions
+
+Who were the original members of the rock band Queen?
+
+The original members of the British rock band Queen were lead singer Freddie Mercury , guitarist Br
+
+  Rank 2
+  Source: https://en.wikipedia.org/wiki/Queen_discography | title: Queen discography - Wikipedia | document_type: url
+  Text: ^ a b c d e f "Discographie Queen" (enter "Queen" into the "Suchen" box) . GfK Entertainment . Retrieved 9 November 2018 .
+
+^ a b c "a-クイーン - Yamachan Land (Archives of the Japanese record charts) - Albums Chart Daijiten - Queen" (in Japanese). 30 De
+
+  Rank 3
+  Source: https://en.wikipedia.org/wiki/Freddie_Mercury | title: Freddie Mercury - Wikipedia | document_type: url
+  Text: Polydor
+
+EMI
+
+Parlophone
+
+Hollywood
+
+Formerly of Queen
+
+Ibex
+
+Sour Milk Sea
+
+Musical artist
+
+Signature Freddie Mercury (born Farrokh Bulsara ; 5 September 1946 – 24 November 1991) was a British singer and songwriter who achieved global fame as the le
+
+  Rank 4
+  Source: https://en.wikipedia.org/wiki/Freddie_Mercury | title: Freddie Mercury - Wikipedia | document_type: url
+  Text: ^ Weller, Amy (5 September 2013). "If it wasn't for Freddie Mercury... 13 artists inspired by the Queen icon" . Gigwise . Archived from the original on 30 March 2019 . Retrieved 13 March 2018 .
+
+^ "2. Freddie Mercury" . Readers Pick the Best Lead Sin
+
+================================================================================
+
+Query 5: Which bands from the corpus are closely connected to grunge or alternative rock?
+--------------------------------------------------------------------------------
+Similarity results:
+  Rank 1 | score=0.8573138117790222
+  Source: https://en.wikipedia.org/wiki/Nirvana_(band) | title: Nirvana (band) - Wikipedia | document_type: url
+  Text: ^ Schaffner, Lauren (August 20, 2021). "12 Bands Who Are Considered Pioneers of Grunge" . Loudwire . Retrieved December 13, 2021 . Nirvana are generally the predominant band associated with grunge...
+
+^ Stegall, Tim (May 27, 2021). "10 Legendary Band
+
+  Rank 2 | score=0.9783563017845154
+  Source: https://en.wikipedia.org/wiki/Nirvana_(band) | title: Nirvana (band) - Wikipedia | document_type: url
+  Text: ^ Coffman, Tim (January 12, 2022). "14 artists influenced by Nirvana, from Kid Cudi to the Pretty Reckless" . Alternative Press Magazine . Retrieved May 30, 2023 . Nirvana are a good choice for what perfect alt-rock looks like
+
+^ a b Steinke, Darcey
+
+  Rank 3 | score=1.020186424255371
+  Source: https://en.wikipedia.org/wiki/Soundgarden | title: Soundgarden - Wikipedia | document_type: url
+  Text: ^ DeRogatis, Jim . Milk It!: Collected Musings on the Alternative Music Explosion of the 90's . Cambridge: Da Capo, 2003. ISBN   0-306-81271-1 , pg. 69
+
+^ Corcoran, Michael (December 1989). "Northwest of Hell" . SPIN . p. 42.
+
+^ "Nirvana and the Stor
+
+  Rank 4 | score=1.02095365524292
+  Source: https://en.wikipedia.org/wiki/Soundgarden | title: Soundgarden - Wikipedia | document_type: url
+  Text: Categories : Soundgarden
+
+1984 establishments in Washington (state)
+
+2019 disestablishments in Washington (state)
+
+A&M Records artists
+
+Alternative rock groups from Washington (state)
+
+American grunge groups
+
+American alternative metal musical groups
+
+MMR results: (unique sources in top-4: 4)
+  Rank 1
+  Source: https://en.wikipedia.org/wiki/Nirvana_(band) | title: Nirvana (band) - Wikipedia | document_type: url
+  Text: ^ Schaffner, Lauren (August 20, 2021). "12 Bands Who Are Considered Pioneers of Grunge" . Loudwire . Retrieved December 13, 2021 . Nirvana are generally the predominant band associated with grunge...
+
+^ Stegall, Tim (May 27, 2021). "10 Legendary Band
+
+  Rank 2
+  Source: https://en.wikipedia.org/wiki/Soundgarden | title: Soundgarden - Wikipedia | document_type: url
+  Text: Categories : Soundgarden
+
+1984 establishments in Washington (state)
+
+2019 disestablishments in Washington (state)
+
+A&M Records artists
+
+Alternative rock groups from Washington (state)
+
+American grunge groups
+
+American alternative metal musical groups
+
+  Rank 3
+  Source: https://en.wikipedia.org/wiki/Pearl_Jam | title: Pearl Jam - Wikipedia | document_type: url
+  Text: Hater
+
+Audioslave
+
+v
+
+t
+
+e
+
+Mother Love Bone
+
+Jeff Ament
+
+Bruce Fairweather
+
+Greg Gilmore
+
+Stone Gossard
+
+Andrew Wood
+
+Studio albums Apple
+
+Extended plays Shine
+
+Compilations Mother Love Bone
+
+Video albums The Love Bone Earth Affair
+
+Songs " Chloe Da
+
+  Rank 4
+  Source: https://en.wikipedia.org/wiki/Pink_Floyd | title: Pink Floyd - Wikipedia | document_type: url
+  Text: Gregory Sams
+
+Martin Sharp
+
+Nicholas Saunders
+
+Storm Thorgerson
+
+Steve Peregrin Took
+
+Alexander Trocchi
+
+Heathcote Williams
+
+Ubi Dwyer
+
+Publications Alternative London
+
+Brighton Voice
+
+Children of Albion: Poetry of the Underground in Britain
+
+The Bla
+
+================================================================================

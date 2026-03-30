@@ -1,0 +1,44 @@
+Ingesting source: https://en.wikipedia.org/wiki/Led_Zeppelin
+
+Source: https://en.wikipedia.org/wiki/Led_Zeppelin
+Chunk count: 142
+
+Chunk 1:
+Metadata: {'document_type': 'url', 'title': 'Led Zeppelin - Wikipedia', 'ingested_at': '2026-03-29T16:54:16'}
+From Wikipedia, the free encyclopedia
+
+English rock band (1968–1980)
+
+This article is about the band. For their debut album, see Led Zeppelin (album) . For other uses, see Led Zeppelin (disambiguation) .
+
+Led Zeppelin
+
+Led Zeppelin in 1971 From left to right: John Paul Jones , Jimmy Page , John Bonham and Robert Plant
+
+Background information Origin London, England Genres Hard rock
+
+blues rock
+
+folk rock
+
+heavy metal
+
+Works Discography
+
+songs
+
+Years active 1968–1980 [ nb 1 ] Labels Atlantic
+
+Swan
+
+Chunk 2:
+Metadata: {'document_type': 'url', 'title': 'Led Zeppelin - Wikipedia', 'ingested_at': '2026-03-29T16:54:16'}
+Led Zeppelin evolved from a previous band, the Yardbirds , and were originally named "the New Yardbirds". They signed a deal with Atlantic Records that gave them considerable artistic freedom. Initially unpopular with critics, they achieved commercial success with eight studio albums over ten years. Their 1969 debut, Led Zeppelin , was a top-ten album in several countries and features such tracks as " Good Times Bad Times ", " Dazed and Confused " and " Communication Breakdown ". Led Zeppelin II
+
+Chunk 3:
+Metadata: {'document_type': 'url', 'title': 'Led Zeppelin - Wikipedia', 'ingested_at': '2026-03-29T16:54:16'}
+Page composed most of Led Zeppelin's music, while Plant wrote most of the lyrics. Jones occasionally contributed keyboard-focused parts, particularly on the band's final album. The latter half of their career saw a series of record-breaking tours that earned the group a reputation for excess and debauchery. Although they remained commercially and critically successful, their touring and output, which included Presence (1976) and In Through the Out Door (1979), declined in the late 1970s. After B
+
+... 139 more chunks not shown.
+
+================================================================================

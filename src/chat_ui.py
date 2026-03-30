@@ -31,8 +31,11 @@ class ResearchPalChatUI:
         file_frame = tk.Frame(intake_frame)
         file_frame.pack(fill=tk.X, padx=10, pady=(0, 10))
 
-        self.add_files_button = tk.Button(file_frame, text="Add Files Or Folder", command=self.select_sources)
+        self.add_files_button = tk.Button(file_frame, text="Add Files", command=self.select_files)
         self.add_files_button.pack(side=tk.LEFT, fill=tk.X, expand=True)
+
+        self.add_folder_button = tk.Button(file_frame, text="Add Folder", command=self.select_folder)
+        self.add_folder_button.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(8, 0))
 
         self.chat_history = scrolledtext.ScrolledText(self.root, wrap=tk.WORD, state=tk.DISABLED)
         self.chat_history.pack(fill=tk.BOTH, expand=True, padx=12, pady=(0, 8))
@@ -74,6 +77,7 @@ class ResearchPalChatUI:
         self.url_input.config(state=state)
         self.add_url_button.config(state=state)
         self.add_files_button.config(state=state)
+        self.add_folder_button.config(state=state)
 
     def submit_url(self, event=None) -> None:
         url = self.url_input.get().strip()
@@ -85,7 +89,7 @@ class ResearchPalChatUI:
         self.append_message("System", f"Adding URL: {url}")
         threading.Thread(target=self.run_ingestion, args=([url],), daemon=True).start()
 
-    def select_sources(self) -> None:
+    def select_files(self) -> None:
         selected_files = list(
             filedialog.askopenfilenames(
                 title="Select files to ingest",
@@ -95,18 +99,22 @@ class ResearchPalChatUI:
                 ],
             )
         )
-        selected_folder = filedialog.askdirectory(title="Or select a folder to ingest")
 
-        sources = selected_files.copy()
-        if selected_folder:
-            sources.append(selected_folder)
-
-        if not sources:
+        if not selected_files:
             return
 
         self.set_busy(True)
-        self.append_message("System", f"Adding {len(sources)} source(s).")
-        threading.Thread(target=self.run_ingestion, args=(sources,), daemon=True).start()
+        self.append_message("System", f"Adding {len(selected_files)} file(s).")
+        threading.Thread(target=self.run_ingestion, args=(selected_files,), daemon=True).start()
+
+    def select_folder(self) -> None:
+        selected_folder = filedialog.askdirectory(title="Select a folder to ingest")
+        if not selected_folder:
+            return
+
+        self.set_busy(True)
+        self.append_message("System", f"Adding folder: {selected_folder}")
+        threading.Thread(target=self.run_ingestion, args=([selected_folder],), daemon=True).start()
 
     def run_ingestion(self, sources: list[str]) -> None:
         try:
